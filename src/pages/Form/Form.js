@@ -37,7 +37,7 @@ const Form = () => {
             <input type="email" className='form__input' name='email' placeholder='Email' required/>
             <input type="number" className='form__input' name='rating' placeholder='Rating 1 - 5' required min="0" max="5"/>
           </div>
-          <textarea className='form__textarea' name="message" placeholder='Feedback message' required minLength="10" maxLength="300"/>
+          <textarea className='form__textarea' name="message" placeholder='Feedback message' required minLength="3" maxLength="300"/>
         </div>
         <button type='submit' className='form__cta'>
           Submit

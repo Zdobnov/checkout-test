@@ -1,7 +1,11 @@
 .results-item {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 4px;
+
+  @media screen and (min-width: 768px) {
+    gap: 16px;
+  }
 
   &:not(:first-child) {
     padding-top: 20px;
@@ -16,7 +20,11 @@
   &__date,
   &__email,
   &__rate {
-    flex: 0 0 calc(50% - 8px);
+    flex: 0 0 100%;
+
+    @media screen and (min-width: 768px) {
+      flex: 0 0 calc(50% - 8px);
+    }
   }
 
   &__name {
@@ -30,10 +38,18 @@
 
   &__date,
   &__rate {
-    text-align: right;
+    @media screen and (min-width: 768px) {
+      text-align: right;
+    }
   }
 
   &__date {
     color: var(--secondary-text-color);
+  }
+
+  &__message {
+    @media screen and (max-width: 767px) {
+      margin-top: 16px;
+    }
   }
 }

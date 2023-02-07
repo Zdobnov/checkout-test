@@ -1,10 +1,20 @@
 .form {
-  padding-top: 40px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
 
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
+
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
   }
 
   &__wrapper {
@@ -23,7 +33,11 @@
     border-radius: 0;
     transition: border-radius .4s ease;
     align-self: flex-end;
-    margin-top: 40px;
+    margin-top: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 40px;
+    }
 
     &:hover {
       border-radius: 20px;
@@ -32,14 +46,25 @@
 
   &__container {
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      gap: 40px;
+      justify-content: space-between;
+      flex-direction: row;
+    }
   }
 
   &__inputs {
     flex: 0 0 calc(50% - 20px);
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+      gap: 40px;
+    }
   }
 
   &__input {

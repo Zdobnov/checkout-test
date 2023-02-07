@@ -1,16 +1,29 @@
 .results {
-  padding-top: 40px;
+  padding-top: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
 
   &__header {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 20px;
+  }
+
+  &__title {
+    font-size: 20px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+    }
   }
 
   &__back {
     height: 40px;
-    width: 200px;
+    width: 80px;
     cursor: pointer;
     border: none;
     background: var(--primary-color);
@@ -24,16 +37,30 @@
     align-items: center;
     text-decoration: none;
 
+    @media screen and (min-width: 768px) {
+      width: 200px;
+    }
+
     &:hover {
       border-radius: 20px;
     }
   }
 
   &__subtitle {
-    margin-top: 80px;
+    margin-top: 40px;
+    font-size: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 80px;
+      font-size: 24px;
+    }
   }
 
   &__list {
-    margin-top: 40px;
+    margin-top: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 40px;
+    }
   }
 }

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { FeedbackListContext } from '../../state/context';
 import Wrapper from '../../components/Wrapper/Wrapper';
 import ResultsItem from '../../components/ResultsItem/ResultsItem';
+import Chart from '../../components/Chart/Chart';
 
 import './Results.scss';
 
@@ -20,9 +21,7 @@ const Results = () => {
           Back
         </Link>
       </header>
-      <div className='results__chart'>
-        charts will be here
-      </div>
+      <Chart />
       <h2 className='results__subtitle'>
         Latest Comments
       </h2>

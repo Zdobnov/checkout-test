@@ -1,0 +1,39 @@
+.results {
+  padding: 40px 0 0;
+
+  &__header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__back {
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    border: none;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 16px;
+    border-radius: 0;
+    transition: border-radius .4s ease;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+      border-radius: 20px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 80px;
+  }
+
+  &__list {
+    margin-top: 40px;
+  }
+}

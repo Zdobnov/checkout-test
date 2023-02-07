@@ -1,2 +1,6 @@
-# checkout-test
-Test task for the Checkout.com
+# Tech
+
+- react
+- react router
+- uuid
+- moment

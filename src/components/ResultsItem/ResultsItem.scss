@@ -1,0 +1,39 @@
+.results-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  &:not(:first-child) {
+    padding-top: 20px;
+  }
+
+  &:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--separator);
+  }
+
+  &__name,
+  &__date,
+  &__email,
+  &__rate {
+    flex: 0 0 calc(50% - 8px);
+  }
+
+  &__name {
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  &__email {
+    color: var(--secondary-text-color);
+  }
+
+  &__date,
+  &__rate {
+    text-align: right;
+  }
+
+  &__date {
+    color: var(--secondary-text-color);
+  }
+}
